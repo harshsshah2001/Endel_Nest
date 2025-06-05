@@ -28,7 +28,7 @@ async function bootstrap() {
   app.useStaticAssets(uploadDir, { prefix: '/uploads/' });
 
   // Serve static HTML/CSS/JS from `html-css-js` folder
-  const htmlFolder = join(__dirname, '..', '..', 'html-css-js'); // Go up from dist to root
+  const htmlFolder = join(__dirname, '..', '..', 'Endel_HTML-CSS-JS'); // Go up from dist to root
   app.useStaticAssets(htmlFolder);
 
   // CORS config

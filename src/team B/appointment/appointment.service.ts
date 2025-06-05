@@ -127,7 +127,7 @@ export class AppointmentService {
   nationalid, photo, visit, personname, department, durationtime,
   durationunit, visitortype, vehicletype, vehiclenumber, drivername,
   drivermobile, drivernationalid, driverphoto, notes, isformcompleted,
-  isApproved, inprogress, complete, exit, ndaApproved, SaftyApproval
+  isApproved, inprogress, complete, exit,
 } = savedAppointment;
 
 const masterRecordData:Partial<MasterRecord> = {
@@ -406,9 +406,9 @@ await this.masterRecordService.upsert(masterRecordData);
      const {
   firstname, lastname, gender, contactnumber, email, date, time,
   nationalid, photo, visit, personname, department, durationtime,
-  durationunit, visitortype, vehicletype, vehiclenumber, drivername,
+  durationunit, visitortype, vehicletype, vehiclenumber, drivername,  
   drivermobile, drivernationalid, driverphoto, notes, isformcompleted,
-  isApproved, inprogress, complete, exit, ndaApproved, SaftyApproval
+  isApproved, inprogress, complete, exit,
 } = savedAppointment;
 
 const masterRecordData: Partial<MasterRecord> = {
