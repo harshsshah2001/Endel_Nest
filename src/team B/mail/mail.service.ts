@@ -14,13 +14,8 @@ export class MailService {
   });
 
   async sendAppointmentEmail(visitorEmail: string, date: string, allocatedTime: string, formLink: string) {
-<<<<<<< HEAD
     const ndaFormLink = `http://192.168.3.77:8000/nda-form.html?email=${encodeURIComponent(visitorEmail)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(allocatedTime)}`;
     const safetyVideoLink = `http://192.168.3.77:8000/safety-video.html?email=${encodeURIComponent(visitorEmail)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(allocatedTime)}`;
-=======
-    const ndaFormLink = `https://192.168.3.75:3001/nda-form.html?email=${encodeURIComponent(visitorEmail)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(allocatedTime)}`;
-    const safetyVideoLink = `https://192.168.3.75:3001/safety-video.html?email=${encodeURIComponent(visitorEmail)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(allocatedTime)}`;
->>>>>>> 31ba3ac30fa8754b6e72757f1154dfdea968e156
     const mailOptions = {
       from: `"Endel Digital" <parthvaishnav81@gmail.com>`,
       to: visitorEmail,
