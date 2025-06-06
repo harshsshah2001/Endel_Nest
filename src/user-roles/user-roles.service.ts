@@ -104,6 +104,17 @@ export class UserRolesService {
           isDeleteDisplay: true,
           isExecuteDisplay: true,
         },
+        
+        {
+          permissionName: 'AllRecords',
+          isMaster: true,
+          isReadDisplay: true,
+          isCreateDisplay: true,
+          isUpdateDisplay: true,
+          isDeleteDisplay: true,
+          isExecuteDisplay: true,
+        },
+        
       ];
 
       for (const perm of initialPermissions) {
