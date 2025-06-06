@@ -110,7 +110,7 @@ export class AppointmentService {
             gender: savedAppointment.gender || '',
             contactnumber: savedAppointment.contactnumber || '',
           });
-          const formLink = `https://192.168.3.75:3001/visitorverify.html?${params.toString()}`;
+          const formLink = `https://192.168.3.77:3001/visitorverify.html?${params.toString()}`;
           await this.mailService.sendAppointmentEmail(
             savedAppointment.email,
             savedAppointment.date,

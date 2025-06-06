@@ -28,19 +28,19 @@ async function bootstrap() {
   app.useStaticAssets(uploadDir, { prefix: '/uploads/' });
 
   // Serve static HTML/CSS/JS from `html-css-js` folder
-  const htmlFolder = join(__dirname, '..', '..', 'html-css-js'); // Go up from dist to root
+  const htmlFolder = join(__dirname, '..', '..', 'Endel_HTML-CSS-JS'); // Go up from dist to root
   app.useStaticAssets(htmlFolder);
 
   // CORS config
   app.enableCors({
     origin: [
-      'http://192.168.3.75:8000',
+      'http://192.168.3.77:8000',
       'http://127.0.0.1:3000',
-      'http://192.168.3.75:3000',
+      'http://192.168.3.77:3000',
       'http://127.0.0.1:8000',
       'http://localhost:3000',
       'http://localhost:8000',
-      'https://192.168.3.75:3001',
+      'https://192.168.3.77:3001',
     ],
     methods: 'GET,POST,PUT,PATCH,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
@@ -71,8 +71,8 @@ async function bootstrap() {
   const port = 3001;
   const host = '0.0.0.0';
   await app.listen(port, host);
-  logger.log(`✅ HTTPS app running at: https://192.168.3.75:${port}`);
-  logger.log(`✅ Health check at: https://192.168.3.75:${port}/health`);
+  logger.log(`✅ HTTPS app running at: https://192.168.3.77:${port}`);
+  logger.log(`✅ Health check at: https://192.168.3.77:${port}/health`);
 }
 
 bootstrap().catch((error) => {
